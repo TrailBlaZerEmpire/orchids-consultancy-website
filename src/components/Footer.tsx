@@ -42,10 +42,10 @@ export function Footer() {
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 bg-gradient-to-br from-[#c9a962] to-[#d4bc7e] rounded-sm flex items-center justify-center">
-                <span className="text-white font-medium text-lg">A</span>
+                <span className="text-white font-medium text-lg">V</span>
               </div>
               <span className="text-xl font-medium tracking-tight text-white">
-                Ascendant
+                Vision Craft
               </span>
             </div>
             <p className="text-sm text-[#6b6b6b] leading-relaxed mb-6 max-w-xs">
@@ -97,7 +97,7 @@ export function Footer() {
             viewport={{ once: true }}
             className="text-xs text-[#4a4a4a]"
           >
-            © {new Date().getFullYear()} Ascendant Advisory. All rights reserved.
+            © {new Date().getFullYear()} Vision Craft. All rights reserved.
           </motion.p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-xs text-[#4a4a4a] hover:text-[#c9a962] transition-colors">

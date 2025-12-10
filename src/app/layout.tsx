@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ascendant Advisory | Strategic Consultancy",
+  title: "Vision Craft | Strategic Consultancy",
   description: "Where complexity becomes clarity. Where insight becomes advantage. Global strategic advisory for industry leaders.",
 };
 

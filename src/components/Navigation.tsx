@@ -40,14 +40,14 @@ export function Navigation() {
           <div className="flex items-center justify-between h-20">
             <a href="#" className="flex items-center gap-3">
               <div className="w-10 h-10 bg-gradient-to-br from-[#c9a962] to-[#d4bc7e] rounded-sm flex items-center justify-center">
-                <span className="text-white font-medium text-lg">A</span>
+                <span className="text-white font-medium text-lg">V</span>
               </div>
               <span
                 className={`text-xl font-medium tracking-tight transition-colors ${
                   isScrolled ? "text-[#1a1a1a]" : "text-[#1a1a1a]"
                 }`}
               >
-                Ascendant
+                Vision Craft
               </span>
             </a>
 
@@ -100,10 +100,10 @@ export function Navigation() {
               <div className="flex items-center justify-between h-20 px-6 border-b border-[#e5e5e5]">
                 <a href="#" className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-gradient-to-br from-[#c9a962] to-[#d4bc7e] rounded-sm flex items-center justify-center">
-                    <span className="text-white font-medium text-lg">A</span>
+                    <span className="text-white font-medium text-lg">V</span>
                   </div>
                   <span className="text-xl font-medium tracking-tight text-[#1a1a1a]">
-                    Ascendant
+                    Vision Craft
                   </span>
                 </a>
                 <button onClick={() => setIsMobileMenuOpen(false)} className="p-2">
