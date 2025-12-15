@@ -65,10 +65,8 @@ export function ContactCTA() {
               </h3>
               <div className="space-y-4">
                 {[
-                  { city: "New York", address: "375 Park Avenue, 38th Floor" },
-                  { city: "London", address: "22 Bishopsgate, Level 30" },
-                  { city: "Singapore", address: "Marina Bay Financial Centre" },
-                  { city: "Dubai", address: "DIFC, Gate Village Building 3" },
+                  { city: "Malaysia", address: "Krystal Point, 11900 Bayan Baru, Pulau Pinang" },
+                  { city: "Singapore", address: "Paya Lebar Square, 409051" },
                 ].map((office) => (
                   <div
                     key={office.city}
@@ -88,7 +86,7 @@ export function ContactCTA() {
 
             <div className="grid grid-cols-2 gap-4">
               <motion.a
-                href="mailto:partners@consultancy.com"
+                href="mailto:rheeshaalaen@trailblazer.com"
                 whileHover={{ y: -2 }}
                 className="p-6 bg-[#2c2c2c]/50 backdrop-blur-sm rounded-sm border border-[#3d3d3d]/50 hover:border-[#c9a962]/50 transition-colors group"
               >
@@ -97,11 +95,10 @@ export function ContactCTA() {
                   Email
                 </span>
                 <span className="text-sm text-white group-hover:text-[#c9a962] transition-colors">
-                  partners@firm.com
+                  rheeshaalaen@trailblazer.com
                 </span>
               </motion.a>
-              <motion.a
-                href="tel:+1-212-555-0100"
+              <motion.div
                 whileHover={{ y: -2 }}
                 className="p-6 bg-[#2c2c2c]/50 backdrop-blur-sm rounded-sm border border-[#3d3d3d]/50 hover:border-[#c9a962]/50 transition-colors group"
               >
@@ -109,10 +106,15 @@ export function ContactCTA() {
                 <span className="text-xs text-[#6b6b6b] tracking-widest uppercase block mb-1">
                   Phone
                 </span>
-                <span className="text-sm text-white group-hover:text-[#c9a962] transition-colors">
-                  +1 (212) 555-0100
-                </span>
-              </motion.a>
+                <div className="space-y-1">
+                  <a href="tel:+60174416515" className="text-sm text-white group-hover:text-[#c9a962] transition-colors block">
+                    +6017-4416515
+                  </a>
+                  <a href="tel:+6587539315" className="text-sm text-white group-hover:text-[#c9a962] transition-colors block">
+                    +65 87539315
+                  </a>
+                </div>
+              </motion.div>
             </div>
           </motion.div>
         </div>
