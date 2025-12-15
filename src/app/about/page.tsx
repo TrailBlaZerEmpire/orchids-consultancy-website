@@ -27,7 +27,7 @@ export default function AboutPage() {
           <section className="mb-16">
             <h2 className="text-white text-3xl font-bold mb-8 text-center">Founder</h2>
             <div className="flex flex-col items-center mb-8">
-              <div className="relative w-32 h-32 mb-4">
+              <div className="relative w-32 h-32 mb-6">
                 <Image
                   src="https://raw.githubusercontent.com/TrailBlaZerEmpire/SiliconBridge/main/Myself.jpg"
                   alt="Rheeshaalaen Sabapathy"
