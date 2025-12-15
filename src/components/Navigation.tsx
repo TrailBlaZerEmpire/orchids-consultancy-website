@@ -9,7 +9,7 @@ const navLinks = [
   { label: "Framework", href: "#framework" },
   { label: "Case Studies", href: "#cases" },
   { label: "Insights", href: "#insights" },
-  { label: "About", href: "#about" },
+  { label: "About", href: "/about" },
 ];
 
 export function Navigation() {
