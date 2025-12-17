@@ -6,6 +6,7 @@ const loaderPath = require.resolve('orchids-visual-edits/loader.js');
 
 const nextConfig: NextConfig = {
   output: 'export',
+  trailingSlash: true,
   images: {
     remotePatterns: [
       {
