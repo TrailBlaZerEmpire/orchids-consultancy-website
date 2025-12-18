@@ -4,7 +4,7 @@ import { useState, useTransition } from "react";
 import Link from "next/link";
 import { login, signup } from "./actions";
 
-export function LoginPage() {
+function LoginPage() {
   const [isLogin, setIsLogin] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
