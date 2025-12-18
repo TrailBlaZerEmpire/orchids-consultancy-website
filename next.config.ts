@@ -4,6 +4,7 @@ import path from "node:path";
 const loaderPath = require.resolve("orchids-visual-edits/loader.js");
 
 const nextConfig: NextConfig = {
+   output: "standalone", // ✅ for OpenNext/Workers (hybrid)
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "**" },
