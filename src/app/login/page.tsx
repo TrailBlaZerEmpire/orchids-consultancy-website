@@ -23,16 +23,16 @@ export function LoginPage() {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#fafafa]">
-      <nav className="px-8 py-6">
-        <Link href="/" className="flex items-center gap-3 w-fit">
-          <div className="w-10 h-10 bg-[#2c2c2c] flex items-center justify-center">
-            <span className="text-[#c9a962] font-bold text-lg" style={{ fontFamily: 'Playfair Display, serif' }}>O</span>
-          </div>
-          <span className="text-xl font-semibold text-[#2c2c2c]" style={{ fontFamily: 'Playfair Display, serif' }}>
-            Orchids
-          </span>
-        </Link>
-      </nav>
+        <nav className="px-8 py-6">
+          <Link href="/" className="flex items-center gap-3 w-fit">
+            <div className="w-10 h-10 bg-gradient-to-br from-[#c9a962] to-[#d4bc7e] rounded-sm flex items-center justify-center">
+              <span className="text-white font-medium text-lg">V</span>
+            </div>
+            <span className="text-xl font-medium tracking-tight text-[#1a1a1a]">
+              Vision Craft
+            </span>
+          </Link>
+        </nav>
 
       <div className="flex-1 flex items-center justify-center px-4">
         <div className="w-full max-w-md">

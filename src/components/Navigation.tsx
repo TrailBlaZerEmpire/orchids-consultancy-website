@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 
 const navLinks = [
   { label: "Services", href: "#services" },
@@ -65,18 +66,19 @@ export function Navigation() {
               ))}
             </div>
 
-            <div className="hidden lg:flex items-center gap-4">
-              <button
-                className={`text-sm font-medium tracking-wide transition-colors hover:text-[#c9a962] ${
-                  isScrolled ? "text-[#6b6b6b]" : "text-[#6b6b6b]"
-                }`}
-              >
-                Client Login
-              </button>
-              <button className="btn-beam px-5 py-2.5 bg-[#2c2c2c] text-white text-sm font-medium tracking-wide rounded-sm hover:bg-[#3d3d3d] transition-colors">
-                Contact
-              </button>
-            </div>
+              <div className="hidden lg:flex items-center gap-4">
+                <Link
+                  href="/login"
+                  className={`text-sm font-medium tracking-wide transition-colors hover:text-[#c9a962] ${
+                    isScrolled ? "text-[#6b6b6b]" : "text-[#6b6b6b]"
+                  }`}
+                >
+                  Client Login
+                </Link>
+                <a href="#contact" className="btn-beam px-5 py-2.5 bg-[#2c2c2c] text-white text-sm font-medium tracking-wide rounded-sm hover:bg-[#3d3d3d] transition-colors">
+                  Contact
+                </a>
+              </div>
 
             <button
               onClick={() => setIsMobileMenuOpen(true)}
