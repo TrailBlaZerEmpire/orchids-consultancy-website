@@ -1,0 +1,12 @@
+main = ".open-next/worker.js"
+name = "visioncraft-consultancy"
+compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+[vars]
+NEXT_PUBLIC_SUPABASE_URL = "https://kehpzpbpawvkleyeyqmu.supabase.co"
+NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtlaHB6cGJwYXd2a2xleWV5cW11Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjU5NTc4ODgsImV4cCI6MjA4MTUzODg4fQ.kkdLJt6zoRrftpks3q4Oq59vdCNC5J6IBy7UY_HpPjM"
