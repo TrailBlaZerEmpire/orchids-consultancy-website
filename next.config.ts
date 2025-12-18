@@ -1,10 +1,9 @@
 import type { NextConfig } from "next";
-import path from "node:path";
 
 const loaderPath = require.resolve("orchids-visual-edits/loader.js");
 
 const nextConfig: NextConfig = {
-   output: "standalone", // ✅ for OpenNext/Workers (hybrid)
+  output: "standalone",
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "**" },
@@ -12,7 +11,6 @@ const nextConfig: NextConfig = {
     ],
     unoptimized: true,
   },
-  outputFileTracingRoot: path.resolve(__dirname, "../../"),
   typescript: { ignoreBuildErrors: true },
   eslint: { ignoreDuringBuilds: true },
   turbopack: {
