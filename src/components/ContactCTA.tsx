@@ -5,7 +5,7 @@ import { ArrowRight, Mail, Phone, MapPin } from "lucide-react";
 
 export function ContactCTA() {
   return (
-    <section className="relative py-32 px-6 overflow-hidden">
+    <section id="contact" className="relative py-32 px-6 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a1a] via-[#2c2c2c] to-[#1a1a1a] animate-gradient-shift" />
       
       <div className="absolute inset-0">
@@ -107,9 +107,9 @@ export function ContactCTA() {
                   Phone
                 </span>
                 <div className="space-y-1">
-                  <a href="tel:+60174416515" className="text-sm text-white group-hover:text-[#c9a962] transition-colors block">
-                    +6017-4416515
-                  </a>
+                    <a href="tel:+60174416515" className="text-sm text-white group-hover:text-[#c9a962] transition-colors block">
+                      +60 174416515
+                    </a>
                   <a href="tel:+6587539315" className="text-sm text-white group-hover:text-[#c9a962] transition-colors block">
                     +65 87539315
                   </a>

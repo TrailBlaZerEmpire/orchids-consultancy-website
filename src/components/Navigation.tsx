@@ -129,11 +129,15 @@ export function Navigation() {
                 ))}
               </div>
 
-              <div className="px-6 py-8 border-t border-[#e5e5e5]">
-                <button className="w-full btn-beam px-8 py-4 bg-[#2c2c2c] text-white text-sm font-medium tracking-wide rounded-sm hover:bg-[#3d3d3d] transition-colors">
-                  Schedule Consultation
-                </button>
-              </div>
+                <div className="px-6 py-8 border-t border-[#e5e5e5]">
+                  <a 
+                    href="#contact"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="block w-full text-center btn-beam px-8 py-4 bg-[#2c2c2c] text-white text-sm font-medium tracking-wide rounded-sm hover:bg-[#3d3d3d] transition-colors"
+                  >
+                    Schedule Consultation
+                  </a>
+                </div>
             </div>
           </motion.div>
         )}

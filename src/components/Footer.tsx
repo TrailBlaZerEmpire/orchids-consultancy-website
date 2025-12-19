@@ -110,16 +110,16 @@ export function Footer() {
                 {category}
               </h4>
               <ul className="space-y-3">
-                {links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="text-sm text-[#6b6b6b] hover:text-[#c9a962] transition-colors"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                ))}
+                  {links.map((link) => (
+                    <li key={link}>
+                      <a
+                        href={link === "About Us" ? "/about" : link === "Contact" ? "#contact" : "#"}
+                        className="text-sm text-[#6b6b6b] hover:text-[#c9a962] transition-colors"
+                      >
+                        {link}
+                      </a>
+                    </li>
+                  ))}
               </ul>
             </div>
           ))}
