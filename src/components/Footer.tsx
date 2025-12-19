@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Linkedin, Twitter } from "lucide-react";
+import { Linkedin, Twitter, Youtube, FileText } from "lucide-react";
 
 const footerLinks = {
   Services: [
@@ -34,6 +34,42 @@ const footerLinks = {
   ],
 };
 
+const socialLinks = [
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/company/trailblazer-empire/?viewAsMember=true",
+    icon: <Linkedin className="w-4 h-4" />,
+  },
+  {
+    name: "X",
+    href: "https://x.com/Rheshaalaen",
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="w-4 h-4"
+      >
+        <path d="M4 4l11.733 16h4.267l-11.733-16z" />
+        <path d="M4 20l6.768-6.768m2.464-2.464l6.768-6.768" />
+      </svg>
+    ),
+  },
+  {
+    name: "YouTube",
+    href: "https://www.youtube.com/@rheeshaalaen",
+    icon: <Youtube className="w-4 h-4" />,
+  },
+  {
+    name: "Medium",
+    href: "https://reshal-saba.medium.com/",
+    icon: <FileText className="w-4 h-4" />,
+  },
+];
+
 export function Footer() {
   return (
     <footer className="bg-[#0f0f0f] pt-20 pb-8 px-6">
@@ -53,18 +89,18 @@ export function Footer() {
               industry leaders across sectors and geographies.
             </p>
             <div className="flex gap-3">
-              <a
-                href="#"
-                className="w-10 h-10 bg-[#2c2c2c] rounded-sm flex items-center justify-center text-[#6b6b6b] hover:text-[#c9a962] hover:bg-[#3d3d3d] transition-colors"
-              >
-                <Linkedin className="w-4 h-4" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-[#2c2c2c] rounded-sm flex items-center justify-center text-[#6b6b6b] hover:text-[#c9a962] hover:bg-[#3d3d3d] transition-colors"
-              >
-                <Twitter className="w-4 h-4" />
-              </a>
+              {socialLinks.map((social) => (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-[#2c2c2c] rounded-sm flex items-center justify-center text-[#6b6b6b] hover:text-[#c9a962] hover:bg-[#3d3d3d] transition-colors"
+                  aria-label={social.name}
+                >
+                  {social.icon}
+                </a>
+              ))}
             </div>
           </div>
 

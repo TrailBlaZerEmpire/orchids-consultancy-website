@@ -4,6 +4,7 @@ import { ValueProposition } from "@/components/ValueProposition";
 import { FrameworkSection } from "@/components/FrameworkSection";
 import { CaseStudySlider } from "@/components/CaseStudySlider";
 import { MacroInsightsTicker } from "@/components/MacroInsightsTicker";
+import { SocialFeed } from "@/components/SocialFeed";
 import { ContactCTA } from "@/components/ContactCTA";
 import { Footer } from "@/components/Footer";
 
@@ -23,6 +24,7 @@ export default function Home() {
       </div>
       <div id="insights">
         <MacroInsightsTicker />
+        <SocialFeed />
       </div>
       <ContactCTA />
       <Footer />
